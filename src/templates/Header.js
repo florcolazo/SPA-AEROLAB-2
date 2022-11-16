@@ -1,9 +1,8 @@
-
 const Header = () => {
     const view = `
       <div className="Header-main"
         <div className="Header-logo"> 
-          <img src="../assets/images/aerolab-logo-svg alt ""/>
+          <img src="assets/images/aerolab-logo-svg alt ""/>
           <h1>
             <a href="#">
             <i class="fas fa-home"></i>

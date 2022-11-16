@@ -31,6 +31,7 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  border: solid 1px #000;
 }
 
 .Products {
@@ -38,7 +39,6 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
-  border-color:#15302C;
   
 }
 
@@ -72,13 +72,15 @@ body {
   height: auto;
   border-radius: 5px 5px;
   border-color:#15302C;
+  border: solid 1px #000;
 }
 
 .Products-card h2 {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 30;
   text-align: center;
   border-color:#15302C;
+  border: solid 1px #000;
 }
 
 .Products-card h3 {
@@ -87,6 +89,8 @@ body {
   text-align: left;
   margin: 20px;
   border-color:#15302C;
+  border: solid 1px #000;
+  
 }
 
 .Product-items {
@@ -94,7 +98,7 @@ body {
   margin-bottom: 0.625rem;
   margin-left: 10%;
   box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
-  
+  border: solid 1px #000;
 }
 
 .Product-item img {
@@ -103,7 +107,8 @@ body {
   border-color:#15302C;
   width: 52%;
   margin: 50px auto;
-  border: solid 1px #000;
+  
+  
   font: 1em arial, helvetica, sans-serif;
   color: white;
  
@@ -114,9 +119,10 @@ body {
 
 .Product-item-name h2
 {
-  font-size:50px;
+  font: size 15px;
   color:#616161;
-  border-color:#15302C;
+  font-family: 'Open Sans',sans-serif;
+  
 }
 
 @keyframes fade {
@@ -126,6 +132,19 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.Products-item h2 {
+  display:flex;
+  font-size: 1.0em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight:200;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
 }
 
 .Main-loading {
