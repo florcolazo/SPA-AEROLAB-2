@@ -8,7 +8,7 @@ const getData = async (id) => {
     
   try {
     const response = await fetch(apiURl); //AWAIT ESPERA A QUE ESTO SUCEDA
-
+    
     const data = await response.json();
     return data; //SI TODO ES CORRECTO RETORNA LA DATA
   } catch (error) {

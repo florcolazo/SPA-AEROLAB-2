@@ -20,12 +20,14 @@ module.exports = {
           loader: 'babel-loader',
         }
       },
+         
       {   
         test: /\.(img|url|png|svg|jpg|jpeg|gif)$/,
-                use: {
-                 loader: "file-loader",
-                 options:{}
-                }
+                use: [
+                 {loader: "file-loader",
+                 options: { name: 'assets/[hash].[ext]' },
+               
+                }]
             },
             {
                 test: /\.css$/,

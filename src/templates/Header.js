@@ -1,8 +1,9 @@
+
 const Header = () => {
     const view = `
-      <div class="Header-main"
-        <div class="Header-logo">
-        
+      <div className="Header-main"
+        <div className="Header-logo"> 
+          <img src="../assets/images/aerolab-logo-svg alt ""/>
           <h1>
             <a href="#">
             <i class="fas fa-home"></i>
@@ -28,6 +29,8 @@ const Header = () => {
       </div>
       </div>
     <div class = "Header-encabezado" id="Fondo">
+      <img src='../assets/images/Header-x1.png' alt ='imgEncabezado'/>
+      
     </div>
     `;
     return view;

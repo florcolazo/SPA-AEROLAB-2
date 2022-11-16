@@ -4,22 +4,23 @@ import Error404 from './Error404';
 
 
 
+
 const Product = async (Products) => {
 
   const id = getHash();
-  const product = await getData(id);
-  console.log(product);
-  const { img, name,category,cost} = product;
+  const products = await getData();
+  
+  const { img, name,category,cost} = products;
 
-  const view = product? `
+  const view = products? `
     <section class="Product-inner">
       <article class="Product-card">
-        <img src="${product.img}" alt="${product.name}">
-        <h2>${product.name}</h2>
+        <img src="${products.img}" alt="${products.name}">
+        <h2>${products.name}</h2>
       </article>
       <article class="Prodcuct-card">
-        <h3>Categoria: ${product.category}</h3>
-        <h3>Costo: ${product.cost}</h3>
+        <h3>Categoria: ${products.category}</h3>
+        <h3>Costo: ${products.cost}</h3>
 
         
       </article>
