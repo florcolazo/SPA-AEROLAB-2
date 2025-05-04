@@ -4,15 +4,14 @@ import Product from '../pages/Product';
 import Error404 from '../pages/Error404';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
-<<<<<<< HEAD
+
 import getData from '../utils/getData';
-=======
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
+
 
 const routes = {
   '/': Home,
   '/:id': Product,
-<<<<<<< HEAD
+
   '/about': 'about',
 };
 
@@ -39,24 +38,6 @@ const router = async () => {
   }
   
   content.innerHTML = await render(products, id);
-=======
-  '/contact': 'Contact',
-};
-
-const router = async () => {
-  const header = null || 
-document.getElementById('header');
-  const content = null || 
-document.getElementById('content');
-
-  header.innerHTML = await Header();
-  let hash = getHash();
-  let route = await 
-resolveRoutes(hash);
-  console.log(route)
-  let render = routes[route] ? routes[route] : Error404;
-  content.innerHTML = await render();
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
-};
+}
 
 export default router;

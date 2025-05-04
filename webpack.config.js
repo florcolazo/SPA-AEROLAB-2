@@ -20,41 +20,36 @@ module.exports = {
           loader: 'babel-loader',
         }
       },
-         
       {   
         test: /\.(img|url|png|svg|jpg|jpeg|gif)$/,
-                use: [
-                 {loader: "file-loader",
-                 options: { name: 'assets/[hash].[ext]' },
-               
-                }]
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                
-                  ]
-                },
-         
-                
-            ]   
-        },
-  plugins: [
-    new HtmlWebpackPlugin(
+        use: [
+          {
+            loader: "file-loader",
+            options: { name: 'assets/[hash].[ext]' },
+          }
+        ]
+      },
       {
-        inject: true,
-        template: './public/index.html',
-        filename: './index.html',
-      }
-    ),
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+    ]   
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: './public/index.html',
+      filename: './index.html',
+    }),
     new CopyWebpackPlugin({
-<<<<<<< HEAD
       patterns: [
-        { from: "./src/assets/images", to: "assets/images" }
+        { from: "./src/assets/images", to: "assets/images" },
+        { from: "./src/styles/styles.css", to: '' }
       ],
-  }),
+    }),
   ],
   devServer: {
     static: [
@@ -76,12 +71,4 @@ module.exports = {
     host: '0.0.0.0',
     allowedHosts: 'all',
   }
-=======
-      patterns: [{ from: "./src/styles/styles.css", 
-      to: '' }],
-  })
-  ]
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
-
-

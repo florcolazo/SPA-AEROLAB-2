@@ -15,18 +15,11 @@
     "@babel/preset-env": "^7.19.4",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^7.0.0",
-<<<<<<< HEAD
     "css-loader": "^6.11.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "style-loader": "^4.0.0",
-=======
-    "css-loader": "^6.7.2",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"

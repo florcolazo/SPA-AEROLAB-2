@@ -1,19 +1,12 @@
 const resolveRoutes = (route) => {
-<<<<<<< HEAD
   if (!route || route === '') {
     return '/';
   }
-=======
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
-  if (route.length <= 32) {
-    let validRoute = route === '/' ? route : '/:id';
-    return validRoute;
+  if (route === 'about') {
+    return '/about';
   }
-  return `/${route}`
+  // For any other route, assume it's a product id route
+  return '/:id';
 };
 
-<<<<<<< HEAD
 export default resolveRoutes;
-=======
-export default resolveRoutes;
->>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
