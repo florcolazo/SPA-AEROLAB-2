@@ -31,7 +31,10 @@ body {
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+<<<<<<< HEAD
   border: solid 1px #000;
+=======
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 .Products {
@@ -39,6 +42,10 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
+<<<<<<< HEAD
+=======
+  border-color:#15302C;
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
   
 }
 
@@ -72,6 +79,7 @@ body {
   height: auto;
   border-radius: 5px 5px;
   border-color:#15302C;
+<<<<<<< HEAD
   border: solid 1px #000;
 }
 
@@ -81,6 +89,15 @@ body {
   text-align: center;
   border-color:#15302C;
   border: solid 1px #000;
+=======
+}
+
+.Products-card h2 {
+  font-size: 18px;
+  font-weight: 30;
+  text-align: center;
+  border-color:#15302C;
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 .Products-card h3 {
@@ -89,8 +106,11 @@ body {
   text-align: left;
   margin: 20px;
   border-color:#15302C;
+<<<<<<< HEAD
   border: solid 1px #000;
   
+=======
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 .Product-items {
@@ -98,7 +118,11 @@ body {
   margin-bottom: 0.625rem;
   margin-left: 10%;
   box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+<<<<<<< HEAD
   border: solid 1px #000;
+=======
+  
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 .Product-item img {
@@ -107,8 +131,12 @@ body {
   border-color:#15302C;
   width: 52%;
   margin: 50px auto;
+<<<<<<< HEAD
   
   
+=======
+  border: solid 1px #000;
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
   font: 1em arial, helvetica, sans-serif;
   color: white;
  
@@ -119,10 +147,16 @@ body {
 
 .Product-item-name h2
 {
+<<<<<<< HEAD
   font: size 15px;
   color:#616161;
   font-family: 'Open Sans',sans-serif;
   
+=======
+  font-size:50px;
+  color:#616161;
+  border-color:#15302C;
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 @keyframes fade {
@@ -134,6 +168,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .Products-item h2 {
   display:flex;
   font-size: 1.0em;
@@ -147,6 +182,8 @@ body {
 
 }
 
+=======
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 .Main-loading {
   border: 4px solid #f3f3f3;
   border-top: 4px solid #3498db;

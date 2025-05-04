@@ -50,6 +50,7 @@ module.exports = {
       }
     ),
     new CopyWebpackPlugin({
+<<<<<<< HEAD
       patterns: [
         { from: "./src/assets/images", to: "assets/images" }
       ],
@@ -75,6 +76,12 @@ module.exports = {
     host: '0.0.0.0',
     allowedHosts: 'all',
   }
+=======
+      patterns: [{ from: "./src/styles/styles.css", 
+      to: '' }],
+  })
+  ]
+>>>>>>> c37aba7900268ff024eeba3d97e588e56aabd80e
 }
 
 
