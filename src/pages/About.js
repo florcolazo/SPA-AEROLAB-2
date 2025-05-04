@@ -6,5 +6,5 @@ const About = () =>{
     `
     return view
   }
-   
-  export default About
+    
+export default About

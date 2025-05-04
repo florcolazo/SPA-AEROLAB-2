@@ -51,7 +51,6 @@ module.exports = {
     ),
     new CopyWebpackPlugin({
       patterns: [
-        { from: "./src/styles/styles.css", to: '' },
         { from: "./src/assets/images", to: "assets/images" }
       ],
   }),
@@ -64,12 +63,17 @@ module.exports = {
       {
         directory: path.join(__dirname, 'src/assets/images'),
         publicPath: '/assets/images',
+      },
+      {
+        directory: path.join(__dirname, 'dist'),
       }
     ],
     compress: true,
     port: 8081,
     hot: true,
     open: true,
+    host: '0.0.0.0',
+    allowedHosts: 'all',
   }
 }
 

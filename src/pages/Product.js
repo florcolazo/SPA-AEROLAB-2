@@ -1,35 +1,30 @@
-
-
 import Error404 from './Error404';
 import getProduct from '../utils/getProduct';
-import getHash from '../utils/getHash';
 
 const Product = async (Products, id) => {
+  const product = await getProduct(id);
 
-  const products = await getProduct(id);
-  console.log('Product data:', products);
-  console.log('Product img:', products.img);
+  if (!product) return Error404();
 
-  const { img, name,category,cost} = products;
+  const { img, name, category, cost } = product;
 
-  const view = products? `
-    <section class="Products-inner">
-      <article class="Products-card">
-        
-        <img src="${img.url}" alt="${name}">
-        <h2>${category}</h2>
-      </article>
-      <article class="Products-card">
-        <h3>Categoria: ${category}</h3>
-        <h3>Costo: ${cost}</h3>
-
-        
-      </article>
+  const view = `
+    <div class="product-detail">
+      <h1 class="product-title">Challenger Aereolab</h1>
+      <div class="product-content">
+        <img class="product-img" src="${img.url}" alt="${name}">
+        <div class="product-info">
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Category:</strong> ${category}</p>
+          <p><strong>Cost:</strong> $${cost}</p>
+        </div>
+      </div>
     </div>
-  `
-  : Error404();
+  `;
   return view;
 };
 
-
 export default Product;
+
+
+
